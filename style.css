@@ -1,0 +1,248 @@
+/* Landing- Mobile View */
+
+/* root style */
+
+@font-face {
+    font-family: "Futura Book";
+    src: url(zenith-assets/fonts/futura-book.ttf);
+}
+@font-face {
+    font-family: "Futura Heavy";
+    src: url(zenith-assets/fonts/futura-heavy.ttf)
+}
+
+:root {
+    --color-primary:  rgb(109, 50, 218);
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* base style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Futura Book";
+}
+header {
+    margin-bottom: 20em;;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Futura Book";
+}
+
+img {
+    width: 100%;
+}
+
+/* Layout style */
+
+.heading {
+    background-image: url(zenith-assests/images/backgrounds/hero-bg-texture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+.feature__section {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__section {
+    margin: 1em;
+    display: grid;
+    grid-row-gap: 40px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "title title title"
+    "s . t"
+    "g . j"
+    ". a .";
+}
+
+.dashboard {
+    margin-top: 5em;
+    margin-bottom: 10em;
+    margin-left: .5em;
+    margin-right: .5em;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.footer {
+    margin-top: 5em;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37,101,208,0.9894259818731118) 0%, rgba(100,43,184,0.7265861027190332) 89%);
+}
+
+/* header */
+.logo {
+    width: 35%;
+    margin: 1.5em;
+}
+
+.fa-bars {
+    font-size: 1.8em;
+    color: var(--color-primary);
+    position: absolute;
+    top: .9em;
+    right: .5em;
+}
+
+
+.heading__nav__ul {
+    display: flex;
+}
+
+.heading__nav__ul a {
+    font-size: .5em;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.heading__nav {
+    font-family: "Futura Heavy";
+}
+
+.heading__h1 {
+    margin-top: 3em;
+    margin-left: .5em;
+    padding: 1em;
+    font-family: "Futura Heavy";
+    width: 7em;
+    font-size: 1.5em;
+    letter-spacing: 0.7px;
+
+}
+
+.header__card__container {
+    margin: 2em;
+    margin-top: 5em;
+    box-shadow: var(--box-shadow);
+}
+
+/* feature section */
+
+.feature__section__card {
+    border: 1px solid lightgray;
+    /* width: 12em; */
+    margin: 7px;
+    margin-left: 1em;
+    border: 1px solid rgb(227, 220, 220);
+    box-shadow: var(--box-shadow);
+    border-radius: 7px;
+    width: 90%;
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+.feature__section p {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.feature__section__head {
+    font-size: 1.6em;
+    color: var(--color-primary);
+    margin: 2em;
+}
+
+.feature__img__card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 5%;
+    margin: 1em;
+
+}
+
+ /* product section  */
+
+
+.product__section__img-container {
+    width: 4em;
+    margin-top: .5em;
+}
+.product__section__title {
+    grid-area: title;
+    font-size: 2em;
+    padding: .5em;
+    color: var(--color-primary);
+    
+
+}
+
+.pd__img__slack {
+    grid-area: s;
+}
+
+.pd__img__trello {
+    grid-area: t;
+}
+
+.pd__img__google {
+    grid-area: g;
+}
+
+.pd__img__jira {
+    grid-area: j;
+}
+
+.pd__img__asana{
+    grid-area: a;
+}
+
+/* footer section */
+
+.footer__head {
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+.footer__email {
+    background-color: rgb(184, 136, 230);
+    border-radius: 50px;
+    border: .5px solid rgb(184, 136, 230);
+    width: 60%;
+    padding: 10px;
+    margin: 1em;
+}
+
+.footer__btn {
+    background-color: white;
+    border-radius: 50px;
+    width: 25%;
+    padding: 10px;
+    color: var(--color-primary);
+}
+
+.footer__nav {
+    margin-top: 15em;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    text-align: right;
+}
+
+.ft__nav__li a {
+    color: white;
+    padding: 10px;
+    display: grid;
+}
+
+
+
