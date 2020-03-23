@@ -1,0 +1,318 @@
+/* Landing- desktop View */
+
+/* root style */
+
+@font-face {
+    font-family: "Futura Book";
+    src: url(zenith-assets/fonts/futura-book.ttf);
+}
+@font-face {
+    font-family: "Futura Heavy";
+    src: url(zenith-assets/fonts/futura-heavy.ttf)
+}
+
+:root {
+    --color-primary:  rgb(109, 50, 218);
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* base style */
+* {
+    padding: 30;
+    margin: 30;
+    box-sizing: border-box;
+    font-family: "Futura Book";
+}
+header {
+    margin-bottom: 6em;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Futura Book";
+}
+
+img {
+    width: 100%;
+}
+
+/* Layout style */
+
+.heading{
+    background-image:  url(/zenith-assests/images/backgrounds/hero-bg-cards.png), url(/zenith-assests/images/backgrounds/hero-bg-texture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.feature__section {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__section {
+    margin: 2em;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "title title title"
+    "s . t"
+    "g . j"
+    ". a .";
+}
+
+.dashboard {
+    margin-top: 15em;
+    margin-bottom: 15em;
+    margin-left: 1em;
+    margin-right: .5em;
+    padding: 5em 5em 10em 5em;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.footer {
+    margin-top: 5em;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(37, 100, 208, 0.989) 0%, rgba(100,43,184,0.7265861027190332) 89%);
+}
+
+/* header */
+.logo {
+    width: 25%;
+    margin: 6.5em;
+    padding-left: 5em;}
+
+
+
+.heading__nav__ul {
+    display: flex;
+    height: 30px;
+    left: 0%;
+    right: 41.28%;
+    top: calc(50% - 20px/2 + 1px);
+    margin-top: -150px;
+    margin-left: 850px;
+    
+}
+
+.heading__nav__ul a {
+    font-size: .4em;
+    text-decoration: none;
+    padding: 1em;
+}
+
+.button, .styled {
+    height: 35px;
+    left: 20%;
+    right: 20%;
+    font-family: Futura;
+    font-style: normal;
+    font-weight: inherit;
+    font-size: 15px;
+    line-height: 9px;
+
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+/* Rectangle */
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: linear-gradient(196.2deg, #AB00FF -34.29%, #007BFF 136.11%);
+    border-radius: 100px;   
+}
+
+.heading__nav {
+    font-family: "Futura Heavy";
+}
+
+.heading__h1 {
+    margin-left: 5em;
+    margin-top: 4em;
+    text-align: left;
+    padding: .5em;
+    font-family: "Futura Heavy";
+    width: 9em;
+    font-size: 3.5em;
+    letter-spacing: 0.7px;
+
+}
+
+.header__card__container {
+    position: absolute;
+    left: 9.03%;
+    right: 9.03%;
+    top: 30.08%;
+    bottom: 40.53%;
+    margin: 7em;
+    margin-top: 30em;
+    box-shadow: var(--box-shadow);
+    background-position-x: center;
+}
+
+/* feature section */
+
+.feature__section__card {
+    border: 1px solid lightgray;
+    /* width: 12em; */
+    margin: 7px;
+    margin-left: 1em;
+    border: 1px solid rgb(227, 220, 220);
+    box-shadow: var(--box-shadow);
+    border-radius: 7px;
+    width: 40%;
+    height: 85px;
+    display: flex;
+    grid-column-start: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+.feature__section p {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.feature__section__head {
+    font-size: 3em;
+    color: var(--color-primary);
+    margin: 2em;
+}
+
+.feature__img__card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 2%;
+    margin: 1em;
+
+}
+
+ /* product section  */
+
+
+.product__section__img-container {
+    width: 5em;
+    margin-top: 1em;
+    margin-left: 15em;
+    
+}
+.product__section__title {
+    grid-area: title;
+    margin-top: -40px;
+    font-size: 3em;
+    text-align: center;
+    padding: 1em;
+    color: var(--color-primary);
+    
+
+}
+
+.pd__img__slack {
+    grid-column-start: auto;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    content: "s";
+    clear: both;
+    display: table;
+
+}
+
+.pd__img__trello {
+    grid-column-start: auto;
+    float: left;
+    width: 33.33%;
+    padding: 1px;
+    content: "t";
+    clear: both;
+    display: table;
+}
+
+.pd__img__google {
+    grid-column-start: auto;
+    float: left;
+    width: 33.33%;
+    padding: 1px;
+    content: "g";
+    clear: both;
+    display: table;
+}
+
+.pd__img__jira {
+    grid-column-start: auto;
+    float: right;
+    width: 33.33%;
+    padding: 1px;
+    content: "j";
+    clear: both;
+    display: table;
+}
+
+.pd__img__asana{
+    grid-column-start: auto;
+    float: right;
+    width: 33.33%;
+    padding: 1px;
+    content: "a";
+    clear: both;
+    display: table;
+}
+
+/* footer section */
+
+.footer__head {
+    color: white;
+    padding: 2em;
+    text-align: center;
+    font-size: 3em;
+}
+
+.footer__email{
+    background-color: rgb(184, 136, 230);
+    border-radius: 50px;
+    border: .5px solid rgb(184, 136, 230);
+    width: 60%;
+    padding: 10px;
+    margin: 3em;
+}
+
+.footer__btn {
+    background-color: white;
+    border-radius: 50px;
+    width: 15%;
+    padding: 10px;
+    color: var(--color-primary);
+    
+}
+
+.footer__nav {
+    margin-top: 15em;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    text-align: right;
+}
+
+.ft__nav__li a {
+    color: white;
+    padding: 10px;
+    display: grid;
+}
+
+
+
